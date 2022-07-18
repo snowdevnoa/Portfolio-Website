@@ -9,39 +9,73 @@
 body {
   min-height: 100vh;
 }
-
+a {
+  text-decoration: none;
+}
 h1 {
-  font-size: 2em;
+  text-align: center;
   color: var(--main-text);
   cursor: pointer;
+  font-size: 3rem;
+  transition: color 500ms ease-in-out;
 }
 h1:hover {
   color: rgb(5, 92, 45);
-  transition: color 500ms ease-in;
+}
+
+p {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
 }
 
 /*Classes*/
 .flex {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
   flex-flow: wrap;
+}
+.row {
   flex: 1 1 0;
+  justify-content: center;
+  align-items: center;
 }
 
 .text {
   animation: fadeIn 2s;
 }
+
+.ionicon {
+  height: 2rem;
+}
 /*IDs*/
 
 #pfp {
-  max-width: 200px;
+  max-width: 250px;
   width: 100%;
   height: auto;
   border-radius: 1em;
   animation: fadeIn 2s;
+  margin-left: 5%;
 }
 
+#socials {
+  flex: 1 1 0;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+}
+
+#skills,
+#tools {
+  width: 500px;
+  text-align: center;
+}
+
+#intro {
+  height: 100vh;
+}
 /* ANIMATIONS */
 @keyframes fadeIn {
   from {
@@ -49,5 +83,13 @@ h1:hover {
   }
   to {
     opacity: 1;
+  }
+}
+
+/* Media Queries*/
+@media (max-width: 480px) {
+  #socials {
+    flex-flow: column;
+    align-items: center;
   }
 }
