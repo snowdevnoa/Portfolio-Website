@@ -16,7 +16,7 @@ h1 {
   text-align: center;
   color: var(--main-text);
   cursor: pointer;
-  font-size: 3rem;
+  font-size: 5rem;
   transition: color 500ms ease-in-out;
 }
 h1:hover {
@@ -31,7 +31,9 @@ ul {
   list-style: none;
   padding: 0;
 }
-
+span {
+  display: inline;
+}
 /*Classes*/
 .flex {
   display: flex;
@@ -43,13 +45,26 @@ ul {
   align-items: center;
 }
 
-.text {
+.profile {
   animation: fadeIn 2s;
 }
 
 .ionicon {
   height: 2rem;
 }
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
 /*IDs*/
 
 #pfp {
@@ -58,7 +73,7 @@ ul {
   height: auto;
   border-radius: 1em;
   animation: fadeIn 2s;
-  margin-left: 5%;
+  margin: 0 5%;
 }
 
 #socials {
