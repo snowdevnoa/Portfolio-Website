@@ -41,6 +41,7 @@ list.forEach(function (item) {
     console.log(item.classList[1]);
     //create span Element to place your attribute
     const spanEl = document.createElement('span');
+    item.parentNode.insertBefore(spanEl, item.nextSibling);
 
     let x = item.classList[1];
     switch (x) {
@@ -49,26 +50,20 @@ list.forEach(function (item) {
         console.log('this is Instagram');
         //set your handle text
         spanEl.appendChild(document.createTextNode('xmasnoaa'));
-        item.parentNode.insertBefore(spanEl, item.nextSibling);
-        item.removeEventListener('mouseover', socialReveal);
 
         break;
 
       case 'github':
         console.log('this is github');
         spanEl.appendChild(document.createTextNode('xmasnoaa'));
-        item.parentNode.insertBefore(spanEl, item.nextSibling);
-        item.removeEventListener('mouseover', socialReveal);
 
         break;
 
       case 'linkedin':
         console.log('this is linkedin');
         spanEl.appendChild(document.createTextNode('Tam Duong'));
-        item.parentNode.insertBefore(spanEl, item.nextSibling);
-        item.removeEventListener('mouseover', socialReveal);
-
         break;
     }
+    item.removeEventListener('mouseover', socialReveal);
   });
 });
