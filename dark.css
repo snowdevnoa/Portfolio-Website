@@ -1,0 +1,22 @@
+/*Dark color scheme*/
+.dark {
+  background-color: black;
+  color: white;
+  fill: white;
+}
+.darkh1 {
+  background: -webkit-linear-gradient(
+    180deg,
+    hsla(222, 77%, 25%, 1) 0%,
+    hsla(139, 88%, 23%, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.darkprojects {
+  background-image: linear-gradient(
+    hsla(222, 77%, 15%, 1) 0%,
+    hsla(139, 78%, 13%, 1) 100%
+  );
+}

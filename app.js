@@ -2,14 +2,20 @@ const easterEgg = document.querySelector('h1');
 const socials = document.querySelectorAll('svg.ionicon');
 const page = document.querySelector('body');
 const list = document.querySelectorAll('ul#socials li svg');
+const projects = document.querySelector('div.projects');
+const link = document.querySelectorAll('span');
 //dark mode
+
 function nightMode() {
   page.classList.toggle('dark');
   easterEgg.classList.toggle('darkh1');
   socials.forEach((values) => {
     values.classList.toggle('dark');
   });
+  projects.classList.toggle('darkprojects');
 }
+
+easterEgg.addEventListener('click', nightMode);
 
 // scrolling fade in
 
@@ -29,11 +35,10 @@ function reveal() {
   }
 }
 
-easterEgg.addEventListener('click', nightMode);
-
 window.addEventListener('scroll', reveal);
 
 // // socials reveal
+
 console.log(list);
 
 list.forEach(function (item) {

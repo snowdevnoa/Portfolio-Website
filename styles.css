@@ -23,6 +23,13 @@ h1:hover {
   color: rgb(5, 92, 45);
 }
 
+div.projects img {
+  border-radius: 1rem;
+}
+
+div.projects img:nth-child(1):hover {
+}
+
 p {
   text-align: center;
 }
@@ -49,6 +56,11 @@ span {
   animation: fadeIn 2s;
 }
 
+.projects {
+  background-color: black;
+  min-height: 40rem;
+}
+
 .ionicon {
   height: 2rem;
 }
@@ -71,7 +83,7 @@ span {
   max-width: 250px;
   width: 100%;
   height: auto;
-  border-radius: 1em;
+  border-radius: 16em;
   animation: fadeIn 2s;
   margin: 0 5%;
 }
@@ -106,5 +118,8 @@ span {
   #socials {
     flex-flow: column;
     align-items: center;
+  }
+  div.projects img {
+    height: 10.5rem;
   }
 }
