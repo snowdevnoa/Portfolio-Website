@@ -16,7 +16,7 @@
 
 .darkprojects {
   background-image: linear-gradient(
-    hsla(222, 77%, 15%, 1) 0%,
-    hsla(139, 78%, 13%, 1) 100%
+    rgb(5, 87, 50) 0%,
+    hsla(222, 77%, 15%, 1) 100%
   );
 }

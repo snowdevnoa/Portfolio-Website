@@ -25,9 +25,7 @@ h1:hover {
 
 div.projects img {
   border-radius: 1rem;
-}
-
-div.projects img:nth-child(1):hover {
+  width: 80%;
 }
 
 p {
@@ -115,11 +113,19 @@ span {
 
 /* Media Queries*/
 @media (max-width: 480px) {
+  .profile {
+    position: relative;
+  }
+
+  #pfp {
+    position: relative;
+    bottom: 4rem;
+  }
   #socials {
     flex-flow: column;
     align-items: center;
   }
   div.projects img {
-    height: 10.5rem;
+    width: 100%;
   }
 }
