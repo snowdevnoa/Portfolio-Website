@@ -1,5 +1,5 @@
 /* file to store css variables */
 
 :root {
-  --main-text: #03045e;
+  --main-text: hsla(222, 77%, 25%, 1);
 }
