@@ -101,7 +101,7 @@ span {
 }
 
 #intro {
-  height: 100vh;
+  height: 90vh;
 }
 /* ANIMATIONS */
 @keyframes fadeIn {
@@ -114,14 +114,14 @@ span {
 }
 
 /* Media Queries*/
-@media (max-width: 480px) {
+@media (max-width: 440px) {
   .profile {
     position: relative;
   }
 
   #pfp {
     position: relative;
-    bottom: 4rem;
+    bottom: 2rem;
   }
   #socials {
     flex-flow: column;
