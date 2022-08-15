@@ -15,7 +15,7 @@ a {
 }
 h1 {
   text-align: center;
-  color: var(--main-text);
+  color: hsla(222, 77%, 25%);
   cursor: pointer;
   font-size: 5rem;
   transition: color 500ms ease-in-out;
