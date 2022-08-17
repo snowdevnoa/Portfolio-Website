@@ -97,6 +97,9 @@ span {
 
 /*IDs*/
 
+#bio-txt {
+  padding: 0 2rem;
+}
 #pfp {
   max-width: 250px;
   width: 100%;
