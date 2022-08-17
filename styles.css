@@ -1,4 +1,3 @@
-@import '/var.css';
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 
 /*Elements*/
@@ -15,7 +14,7 @@ a {
 }
 h1 {
   text-align: center;
-  color: hsla(222, 77%, 25%);
+  color: rgb(15, 44, 113);
   cursor: pointer;
   font-size: 5rem;
   transition: color 500ms ease-in-out;
@@ -31,6 +30,10 @@ div.projects img {
 
 p {
   text-align: center;
+}
+
+p.text {
+  font-size: 1.2rem;
 }
 
 ul {
@@ -75,6 +78,21 @@ span {
 .reveal.active {
   transform: translateY(0px);
   opacity: 1;
+}
+
+/*Cursor*/
+
+.txt-type > .txt {
+  border-right: 0.1rem solid rgb(15, 44, 113);
+  animation: blinkTextCursor 600ms steps(40) infinite normal;
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(15, 44, 113 0.8);
+  }
+  to {
+    border-right-color: transparent;
+  }
 }
 
 /*IDs*/
