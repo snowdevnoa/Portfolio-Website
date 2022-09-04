@@ -60,7 +60,7 @@ list.forEach(function (item) {
 
       case 'github':
         console.log('this is github');
-        spanEl.appendChild(document.createTextNode('xmasnoaa'));
+        spanEl.appendChild(document.createTextNode('snowdevnoa'));
 
         break;
 
