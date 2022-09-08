@@ -102,8 +102,9 @@ span {
   padding: 0 2rem;
 }
 #pfp {
-  max-width: 250px;
-  max-height: 60%;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
   border-radius: 16em;
   animation: fadeIn 2s;
   margin: 0 5%;
